@@ -19,6 +19,10 @@ docker-machine-driver-xhyve ruby
 
 brew cask install font-inconsolata
 brew cask install font-source-code-pro
+brew cask install font-fira-mono-for-powerline
+brew cask install font-fira-mono
+brew cask install font-fira-sans
+brew cask install font-fira-code
 
 # Updated python/pip
 brew install python
@@ -54,6 +58,8 @@ brew cask install expo-xde
 brew cask install battle-net
 brew cask install postman
 brew cask install shiftit
+brew cask install genymotion
+brew cask install keybase
 brew cask install caskroom/drivers/sonos
 
 # cask quick look plugins (https://github.com/sindresorhus/quick-look-plugins)
@@ -64,7 +70,7 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize we
 brew doctor
 
 curl -L https://gist.githubusercontent.com/buildmaster/f6a13f0503e50972142d4d420b442134/raw/b30377ede4f5da3d8726089ebe8b4dc57e47f8f0/.zshrc > ~/.zshrc
-
+curl -L https://gist.githubusercontent.com/buildmaster/04e49562581c1e7d33f0afcadc2dab03/raw/446ad2d941b4317c18f75fe912dd90195ea7b306/settings.json > $HOME/Library/Application\ Support/Code/User/settings.json
 
 #others
 # zoom.us
