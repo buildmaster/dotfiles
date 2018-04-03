@@ -9,6 +9,11 @@ brew tap homebrew/boneyard
 brew tap caskroom/fonts
 brew tap caskroom/drivers
 
+# Updated python/pip
+brew reinstall python
+pip install --upgrade setuptools
+pip install --upgrade pip
+
 brew install git git-extras wget amazon-ecs-cli \
 autoconf postgresql	sqlite nvm \
 terraform awscli \
@@ -16,6 +21,10 @@ kops kubernetes-cli kubernetes-helm	\
 zsh docker-machine pgcli redis zsh-completions \
 docker-machine-driver-xhyve ruby
 
+sudo chown root:wheel /usr/local/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+sudo chmod u+s /usr/local/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+
+brew services start redis
 
 brew cask install font-inconsolata
 brew cask install font-source-code-pro
@@ -24,10 +33,7 @@ brew cask install font-fira-mono
 brew cask install font-fira-sans
 brew cask install font-fira-code
 
-# Updated python/pip
-brew install python
-pip install --upgrade setuptools
-pip install --upgrade pip
+
 
 # cask apps
 brew cask install aerial
