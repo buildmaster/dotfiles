@@ -14,12 +14,16 @@ brew reinstall python
 pip install --upgrade setuptools
 pip install --upgrade pip
 
-brew install git git-extras wget amazon-ecs-cli \
-autoconf postgresql	sqlite nvm \
-terraform awscli \
-kops kubernetes-cli kubernetes-helm	\
-zsh docker-machine pgcli redis zsh-completions \
-docker-machine-driver-xhyve ruby
+brew install amazon-ecs-cli autoconf aws-iam-authenticator awslogs \
+bash coreutils docker-machine docker-machine-driver-xhyve \
+eksctl elasticsearch gdbm gettext git git-extras gnu-getopt go \
+helm helmfile highlight icu4c ipcalc jq jason-c \
+k6 kail kibana kobs krb6 kubernetes-cli kubernetes-helm \
+libyubikey lua minikube ncurses node nvm pandoc \
+pgcli pipx pkg-config postgresql prisma pyenv \
+pyenv-virtualenv python readline redis ruby \
+sops sqlite tfenv wget wireguard-go wireguard-tools \
+xz yarn ykman ykpers zsh zsh-completions
 
 sudo chown root:wheel /usr/local/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 sudo chmod u+s /usr/local/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
@@ -71,6 +75,7 @@ brew cask install sequel-pro
 brew cask install gpg-suite
 brew cask install viscosity
 brew cask install lastpass
+brew cask install sonos
 # cask quick look plugins (https://github.com/sindresorhus/quick-look-plugins)
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize webpquicklook suspicious-package quicklookase qlvideo
 
@@ -78,8 +83,8 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize we
 # verify
 brew doctor
 
-curl -L https://gist.githubusercontent.com/buildmaster/f6a13f0503e50972142d4d420b442134/raw/b30377ede4f5da3d8726089ebe8b4dc57e47f8f0/.zshrc > ~/.zshrc
-curl -L https://gist.githubusercontent.com/buildmaster/04e49562581c1e7d33f0afcadc2dab03/raw/446ad2d941b4317c18f75fe912dd90195ea7b306/settings.json > $HOME/Library/Application\ Support/Code/User/settings.json
+curl -L https://gist.githubusercontent.com/buildmaster/f6a13f0503e50972142d4d420b442134/raw/d0a03bde40ea747c24c86183ac3125c56312a5d1/.zshrc > ~/.zshrc
+curl -L https://gist.githubusercontent.com/buildmaster/04e49562581c1e7d33f0afcadc2dab03/raw/2c53b84f1f957b4b095d2af70c1f3d647a609366/settings.json > $HOME/Library/Application\ Support/Code/User/settings.json
 
 #others
 # zoom.us

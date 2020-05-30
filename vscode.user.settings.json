@@ -1,0 +1,31 @@
+{
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "window.zoomLevel": 2,
+  "vs-kubernetes": {
+    "vs-kubernetes.minikube-path": "/Users/owen/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "circleci.apiKey": "532cf07deb76846d9b05d01ca26431ba30b5a08e",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terraform.indexing": {
+    "enabled": false,
+    "liveIndexing": false,
+    "delay": 500,
+    "exclude": [".terraform/**/*", "**/.terraform/**/*"]
+  },
+  "terraform.languageServer": {
+    "enabled": true,
+    "args": []
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "coverage-gutters.showLineCoverage": false,
+  "cSpell.language": "en-GB"
+}
