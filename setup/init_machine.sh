@@ -3,10 +3,10 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # homebrew taps
-brew tap homebrew/cask-cask
 brew tap homebrew/cask-versions
 brew tap homebrew/cask-fonts
 brew tap homebrew/cask-drivers
+brew tap weaveworks/tap
 
 # Updated python/pip
 brew reinstall python
@@ -15,7 +15,7 @@ pip install --upgrade pip
 
 brew install amazon-ecs-cli autoconf aws-iam-authenticator awslogs \
 bash coreutils docker-machine docker-machine-driver-xhyve \
-eksctl elasticsearch gdbm gettext git git-extras gnu-getopt go \
+weaveworks/tap/eksctl elasticsearch gdbm gettext git git-extras gnu-getopt go \
 helm helmfile highlight icu4c ipcalc jq jason-c \
 k6 kail kibana kobs krb6 kubernetes-cli kubernetes-helm \
 libyubikey lua minikube ncurses node nvm pandoc \
