@@ -3,11 +3,10 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # homebrew taps
-brew tap caskroom/cask
-brew tap caskroom/versions
-brew tap homebrew/boneyard
-brew tap caskroom/fonts
-brew tap caskroom/drivers
+brew tap homebrew/cask-cask
+brew tap homebrew/cask-versions
+brew tap homebrew/cask-fonts
+brew tap homebrew/cask-drivers
 
 # Updated python/pip
 brew reinstall python
